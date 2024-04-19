@@ -1,0 +1,220 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+@media (max-wdth:992){
+  .tempo,
+  .submit{
+    display: none;
+  }
+}
+:root {
+  --border: 1px solid #ffffff1a;
+}
+
+body,
+table,
+input,
+button {
+  font: 300 16px/140% 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #121214;
+  color: #ffffff;
+}
+
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 20px 32px;
+  position: relative; 
+}
+
+header {
+  padding: 20px 0;
+}
+
+form {
+  border: var(--border);
+  border-inline: none;
+  padding: 20px 0;
+}
+
+fieldset {
+  border: none;
+}
+
+fieldset>div {
+  display: flex;
+  gap: 12px;
+}
+
+.playlist table {
+  width: 100%;
+  border: 1px solid #ffffff1a;
+  border-collapse: collapse;
+  border-radius: 10px;
+}
+
+.input-wrapper {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: var(--border);
+  border-radius: 10px;
+  padding: 8px 12px;
+  font: 400 14px/150% 'Roboto', sans-serif;
+  color: #C4C4CC;
+}
+
+input {
+  all: unset;
+}
+
+fieldset legend,
+section h2 {
+  font: 700 16px/140% 'Roboto', sans-serif;
+  color: #E1E1E6;
+  text-shadow: 0 0 5px #EF007E, 0 0 10px #8a0c9e, 0 0 15px #6d89dd,
+  0 0 20px rgb(218, 13, 112), 0 0 40px rgb(137, 16, 224), 0 0 55px rgb(155, 224, 212),
+  0 0 75px rgb(13, 22, 137);
+  padding-bottom: 10px;
+}
+
+fieldset button {
+  width: fit-content;
+  background-color: transparent;
+  border-radius: 10px;
+  padding: 7px 20px;
+  text-shadow: 0 0 5px #EF007E, 0 0 10px #8a0c9e, 0 0 15px #6d89dd,
+  0 0 20px rgb(218, 13, 112), 0 0 40px rgb(137, 16, 224), 0 0 55px rgb(155, 224, 212),
+  0 0 75px rgb(13, 22, 137);
+  font: 700 12px/24px 'Roboto', sans-serif;
+  color: #fafcfc;
+  transition: background-color 0.1s, color 0.1s;
+}
+
+.lista-participantes {
+  padding: 20px 0;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table thead {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+thead th,
+tbody td {
+  padding: 12px 16px;
+}
+
+tbody td {
+  border-top: var(--border);
+  font-size: 13px;
+  line-height: 15px;
+  color: #c4c4cc;
+}
+
+tbody td small {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+tbody td button {
+  all: unset;
+  color: #9FF9CC;
+}
+
+tbody td button:hover {
+  text-decoration: underline;
+}
+
+.playlist table {
+  width: 100%;
+}
+
+.playlist th,
+.playlist td {
+  padding: 12px;
+  text-align: left;
+}
+
+.playlist th:first-child,
+.playlist td:first-child {
+  width: 40%;
+}
+
+.playlist th:nth-child(2),
+.playlist td:nth-child(2) {
+  width: 40%;
+}
+
+.playlist th:nth-child(3),
+.playlist td:nth-child(3) {
+  width: 20%;
+}
+
+.calcular-button {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.calcular-button button {
+  width: fit-content;
+  background-color: transparent;
+  border-radius: 10px;
+  padding: 7px 20px;
+  text-shadow: 0 0 5px #EF007E, 0 0 10px #8a0c9e, 0 0 15px #6d89dd,
+  0 0 20px rgb(218, 13, 112), 0 0 40px rgb(137, 16, 224), 0 0 55px rgb(155, 224, 212),
+  0 0 75px rgb(13, 22, 137);
+  font: 700 12px/24px 'Roboto', sans-serif;
+  color: #fafcfc;
+  transition: background-color 0.1s, color 0.1s;
+}
+
+.calcular-button button:hover {
+  color: #eb91d8;
+}
+
+h1 {
+  text-shadow: 0 0 5px #EF007E, 0 0 10px #8a0c9e, 0 0 15px #6d89dd,
+  0 0 20px rgb(218, 13, 112), 0 0 40px rgb(137, 16, 224), 0 0 55px rgb(155, 224, 212),
+  0 0 75px rgb(13, 22, 137);
+}
+
+
+.button-left{
+  position: fixed;
+  bottom: 10px;
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 50%;
+  color: #000000;
+  font-size: 20px;
+  text-align: center;
+  line-height: 40px;
+  text-decoration: none;
+  text-shadow: 0 0 5px #EF007E, 0 0 10px #8a0c9e, 0 0 15px #6d89dd,
+  0 0 20px rgb(218, 13, 112), 0 0 40px rgb(137, 16, 224), 0 0 55px rgb(155, 224, 212),
+  0 0 75px rgb(13, 22, 137);
+  z-index: 999; 
+}
+
+.button-left {
+  left: 10px;
+}
+
+
+
